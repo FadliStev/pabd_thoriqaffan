@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F02E9C5-7C75-45F9-8D53-083D1E2FFF3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>testuidoang</RootNamespace>
+    <AssemblyName>testuidoang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPenerbit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPenerbit.Designer.cs">
+      <DependentUpon>FormPenerbit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPengisianDataBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPengisianDataBuku.Designer.cs">
+      <DependentUpon>FormPengisianDataBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmnAnggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmnAnggota.Designer.cs">
+      <DependentUpon>AdmnAnggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPegawai.Designer.cs">
+      <DependentUpon>FormPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPenyusunan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPenyusunan.Designer.cs">
+      <DependentUpon>FormPenyusunan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRak.Designer.cs">
+      <DependentUpon>FormRak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPeminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPeminjaman.Designer.cs">
+      <DependentUpon>FormPeminjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksi.Designer.cs">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUtama.Designer.cs">
+      <DependentUpon>formUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerpustakaanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerpustakaanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdmnAnggota.resx">
+      <DependentUpon>AdmnAnggota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPegawai.resx">
+      <DependentUpon>FormPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPenerbit.resx">
+      <DependentUpon>FormPenerbit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPengisianDataBuku.resx">
+      <DependentUpon>FormPengisianDataBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPenyusunan.resx">
+      <DependentUpon>FormPenyusunan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRak.resx">
+      <DependentUpon>FormRak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPeminjaman.resx">
+      <DependentUpon>FormPeminjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUtama.resx">
+      <DependentUpon>formUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="PerpustakaanDataSet.xsc">
+      <DependentUpon>PerpustakaanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PerpustakaanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PerpustakaanDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PerpustakaanDataSet.xss">
+      <DependentUpon>PerpustakaanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libraryfoto2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libraryfoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\librarypala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\librarybukukebuka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libraryfoto2-fotor-bg-remover-20230705104929.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
